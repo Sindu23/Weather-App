@@ -18,7 +18,8 @@ export default function InfoBox({ info }) {
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
-            marginTop: "32px" 
+            marginTop: "32px",
+            alignItems: "center" 
             }}>
             <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
@@ -38,6 +39,7 @@ export default function InfoBox({ info }) {
                         <p>Min Temp= {info.tempMin}&deg;C</p>
                         <p>Max Temp= {info.tempMax}&deg;C</p>
                         <p>The weather is <i>{info.weather}</i>, and feels like {info.feelsLike}&deg;C</p>
+                        <p>Wind Speed= {info.windSpeed} m/s</p>
                     </Typography>
                 </CardContent>
             </Card>
