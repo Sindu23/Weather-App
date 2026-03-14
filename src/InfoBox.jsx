@@ -39,7 +39,7 @@ export default function InfoBox({ info }) {
                         <p>Min Temp= {info.tempMin}&deg;C</p>
                         <p>Max Temp= {info.tempMax}&deg;C</p>
                         <p>The weather is <i>{info.weather}</i>, and feels like {info.feelsLike}&deg;C</p>
-                        <p>Wind Speed= {info.windSpeed} m/s</p>
+                        <p>This is the weather information for {info.city}.</p>
                     </Typography>
                 </CardContent>
             </Card>
